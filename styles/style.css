@@ -33,7 +33,7 @@ body {
 #index-title {
     font-size: 300%;
     font-weight: 900;
-    margin-top: 1.5em;
+    margin-top: 1.8em;
     text-shadow: 2px 1px 5px black;
 }
 
@@ -295,6 +295,10 @@ body {
 /*//////////  MEDIA QUERIES  /////*/
 
 @media only screen and (max-width: 600px) {
+
+    #index-title {
+        margin-top: 1.2em;
+    }
 
     /***** Dicee Game *****/
     .dice-winTitle {
