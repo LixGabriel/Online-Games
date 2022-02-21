@@ -1,0 +1,358 @@
+
+:root {
+    --background-color: #011F3F;
+    --pink-color: #EC255A;
+}
+
+body {
+    background-color: var(--background-color);
+    color: white;
+    font-family: Roboto, sans-serif;
+}
+
+#back-btn {
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 2em;
+  margin-left: 3em;
+  transition: 0.2s;
+}
+#back-btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+/*****  HOME PAGE  *****/
+
+
+#index-header {
+    text-align: center;
+}
+
+#index-title {
+    font-size: 300%;
+    font-weight: 900;
+    margin-top: 1.5em;
+    text-shadow: 2px 1px 5px black;
+}
+
+#game-icons {
+    font-size: 200%;
+    color: var(--pink-color);
+}
+
+.index-container-games {
+    margin-top: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.game-div {
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-image {
+    width: 10em;
+    transition: 0.2s;
+}
+.game-image:hover {
+    transform: scale(1.1);
+}
+
+.game-subtitle {
+    margin-top: 0.3em;
+    text-shadow: 2px 1px 5px black;
+}
+
+.play-button {
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 1em;
+    transition: 0.2s;
+}
+.play-button:hover {
+    transform: scale(1.1);
+}
+
+
+#copyright {
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-top: 3em;
+    margin-bottom: 5em;
+    color: gray
+}
+
+
+
+/*****  DICEE GAME  *****/
+
+
+.dice-winTitle {
+    text-align: center;
+    font-size: 300%;
+    font-weight: 900;
+    margin-top: 1em;
+    text-shadow: 2px 1px 5px black;
+}
+
+.dice-container {
+    margin: 8em auto 3em auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dice {
+    text-align: center;
+    display: inline-block;
+}
+
+.dice-img {
+    width: 12em;
+}
+
+.dice-player {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+#play-dice {
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+#play-dice-button {
+    font-size: 1.5em;
+    font-weight: 500;
+    transition: 0.2s;
+}
+#play-dice-button:hover {
+    transform: scale(1.1);
+}
+
+
+
+/*****  DRUM KIT  *****/
+
+#drum-title {
+    text-align: center;
+    font-size: 300%;
+    font-weight: 900;
+    margin-top: 1.5em;
+    text-shadow: 2px 1px 5px black;
+}
+
+.drum {
+    outline: none;
+    border: 10px solid #404B69;
+    font-size: 4rem;
+    font-family: Roboto, sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    color: #FFD32D;
+    text-shadow: 2px 3px 5px #001244;
+    border-radius: 20%;
+    display: inline-block;
+    width: 121px;
+    height: 121px;
+    text-align: center;
+    margin: 0.2em;
+    background-color: #DBEDF3;
+    transition: 0.2s;
+}
+.drum:hover {
+    transform: scale(1.1);
+}
+
+.drum-pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.set {
+    margin: 8em 1em;
+    text-align: center;
+}
+
+.w {
+    background-image: url("../images/drum-kit_images/tom1.png");
+}
+
+.a {
+    background-image: url("../images/drum-kit_images/tom2.png");
+}
+
+.s {
+    background-image: url("../images/drum-kit_images/tom3.png");
+}
+
+.d {
+    background-image: url("../images/drum-kit_images/tom4.png");
+}
+
+.j {
+    background-image: url("../images/drum-kit_images/snare.png");
+}
+
+.k {
+    background-image: url("../images/drum-kit_images/crash.png");
+}
+
+.l {
+    background-image: url("../images/drum-kit_images/kick.png");
+}
+
+
+
+/*****  SIMON GAME  *****/
+
+
+#simon-title {
+    text-align: center;
+    font-size: 300%;
+    font-weight: 900;
+    margin-top: 1em;
+    text-shadow: 2px 1px 5px black;
+}
+
+#level-title {
+    text-align: center;
+    font-size: 200%;
+    font-weight: 900;
+    margin-top: 1em;
+    text-shadow: 2px 1px 5px black;
+}
+
+.simon-container {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 5em 0;
+}
+
+.simon-button {
+    margin: 1.5em;
+    display: inline-block;
+    height: 10em;
+    width: 10em;
+    border: 0.4em solid black;
+    border-radius: 20%;
+    transition: 0.2s;
+}
+.simon-button:hover {
+    transform: scale(1.05);
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.simon-pressed {
+    box-shadow: 0 0 20px grey;
+    background-color: grey;
+}
+
+#play-simon {
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+#play-simon-button {
+    font-size: 1.5em;
+    font-weight: 500;
+    transition: 0.2s;
+}
+#play-simon-button:hover {
+    transform: scale(1.1);
+}
+
+.game-over {
+    background-color: red;
+}
+
+
+/*//////////  MEDIA QUERIES  /////*/
+
+@media only screen and (max-width: 600px) {
+
+    /***** Dicee Game *****/
+    .dice-winTitle {
+        font-size: 200%;
+        font-weight: 700;
+        margin-top: 2em;
+    }
+    .dice-container {
+        margin: 5em auto 3em auto;
+    }
+    .dice-img {
+        width: 8em;
+    }
+    .dice-player {
+        margin-top: 2em;
+        font-size: 1.2em;
+    }
+    #play-dice-button {
+        font-size: 1.2em;
+    }
+
+
+    /***** Drum Kit *****/
+    .set {
+        margin: 3em 1em;
+    }
+
+
+    /***** Dicee Game *****/
+
+    
+    #simon-title {
+        font-size: 200%;
+        font-weight: 700;
+        margin-top: 2em;
+    }
+    #level-title {
+        font-size: 1.2rem;
+    }
+    .simon-container {
+        padding: 3em 0;
+    }
+    .simon-button {
+        margin: 0.5em;
+        height: 8em;
+        width: 8em;
+        border: 0.2em solid black;
+    }
+    .simon-game-over {
+        background-color: red;
+        opacity: 0.8;
+    }
+    .simon-pressed {
+        box-shadow: 0 0 20px white;
+        background-color: grey;
+    }
+    #play-simon-button {
+        font-size: 1.2em;
+    }
+
+}
